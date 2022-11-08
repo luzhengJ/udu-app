@@ -1,13 +1,18 @@
 <template>
-	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view class="text-area">
-			<text class="title">{{title}}</text>
-		</view>
+	<view>
+		<!-- <view class="iconfont icon-ren" style="font-size: 50px;"></view>
+		<view class="iconfont" style="font-size: 50px;">&#xe607;</view> -->
+		<!-- 使用导航栏组件 -->
+		<!-- <max-banner></max-banner> -->
+		
+		<!-- 使用分类组件 -->
+		<!-- <category-box></category-box> -->
 	</view>
 </template>
 
 <script>
+	// import maxBanner from "@/components/max-banner/max-banner.vue"
+	// import categoryBox from "@/components/category-box/category-box.vue"
 	export default {
 		data() {
 			return {
@@ -19,34 +24,14 @@
 		},
 		methods: {
 
+		},
+		components:{
+			// maxBanner,
+			// categoryBox
 		}
 	}
 </script>
 
 <style>
-	.content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-
-	.logo {
-		height: 200rpx;
-		width: 200rpx;
-		margin-top: 200rpx;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 50rpx;
-	}
-
-	.text-area {
-		display: flex;
-		justify-content: center;
-	}
-
-	.title {
-		font-size: 36rpx;
-		color: #8f8f94;
-	}
+	
 </style>
