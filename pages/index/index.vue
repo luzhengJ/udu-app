@@ -7,6 +7,8 @@
 		<i-search-input></i-search-input>
 		<!-- #endif -->
 		
+		<!-- 轮播图 -->
+		<i-banner></i-banner>
 		
 		<!-- 使用分类组件 -->
 		<!-- <category-box></category-box> -->
@@ -18,6 +20,8 @@
 	import iSearchInput from "@/components/common/i-search-input.vue"
     // 引入热门滚动信息模型
 	import SearchModel from "@/model/searchModel.js"
+	// 引入轮播图组件
+	import iBanner from "@/components/common/i-banner.vue"
 	// import categoryBox from "@/components/category-box/category-box.vue"
 	export default {
 		data() {
@@ -34,7 +38,8 @@
 
 		},
 		components:{
-			iSearchInput
+			iSearchInput,
+			iBanner
 			// categoryBox
 		}
 	}

@@ -2,6 +2,7 @@
   "navigationBarTextStyle": "white",
   "navigationBarBackgroundColor": "#345DC2",
   "usingComponents": {
-    "i-search-input": "/components/common/i-search-input"
+    "i-search-input": "/components/common/i-search-input",
+    "i-banner": "/components/common/i-banner"
   }
 }

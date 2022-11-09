@@ -5,7 +5,7 @@
 			"style": {
 				// 导航栏文字颜色
 				"navigationBarTextStyle": "white",
-				// 导航栏背景颜色
+				// 导航栏背景演示
 				"navigationBarBackgroundColor": "#345DC2",
 				"app-plus": {
 					// titleNView 导航栏
@@ -87,6 +87,15 @@
         }
         ,{
             "path" : "components/common/i-search-input",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "components/common/i-banner",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
