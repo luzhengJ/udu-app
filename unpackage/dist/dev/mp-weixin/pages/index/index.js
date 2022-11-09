@@ -153,7 +153,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
-var _iSearchInput = _interopRequireDefault(__webpack_require__(/*! @/components/common/i-search-input.vue */ 18));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} //
+var _iSearchInput = _interopRequireDefault(__webpack_require__(/*! @/components/common/i-search-input.vue */ 18));
+
+var _searchModel = _interopRequireDefault(__webpack_require__(/*! @/model/searchModel.js */ 52));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} //
 //
 //
 //
@@ -169,6 +171,7 @@ var _iSearchInput = _interopRequireDefault(__webpack_require__(/*! @/components/
 //
 //
 // 引入搜索框组件
+// 引入热门滚动信息模型
 // import categoryBox from "@/components/category-box/category-box.vue"
 var _default = { data: function data() {return { title: 'Hello' };}, onLoad: function onLoad() {}, methods: {}, components: { iSearchInput: _iSearchInput.default // categoryBox
   } };exports.default = _default;

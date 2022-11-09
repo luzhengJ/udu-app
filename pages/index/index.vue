@@ -16,6 +16,8 @@
 <script>
 	// 引入搜索框组件
 	import iSearchInput from "@/components/common/i-search-input.vue"
+    // 引入热门滚动信息模型
+	import SearchModel from "@/model/searchModel.js"
 	// import categoryBox from "@/components/category-box/category-box.vue"
 	export default {
 		data() {
@@ -24,7 +26,9 @@
 			}
 		},
 		onLoad() {
-
+            // #ifdef APP-PLUS
+			SearchModel.handleUpdatePlaceholderText(this)
+			// #endif
 		},
 		methods: {
 
