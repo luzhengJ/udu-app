@@ -4,7 +4,8 @@
     "pages/category/category",
     "pages/article/article",
     "pages/question/question",
-    "pages/my/my"
+    "pages/my/my",
+    "components/common/i-search-input"
   ],
   "subPackages": [],
   "window": {
