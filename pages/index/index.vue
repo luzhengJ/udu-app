@@ -17,6 +17,8 @@
 		<view class="list-container">
 			<!-- 热门推荐 -->
 			<swiper-course name="热门推荐" word="HOT"></swiper-course>
+			<!-- 近期上新 -->
+			<scoll-course name="近期上新" word="NEW"></scoll-course>
 			<!-- 免费精选 -->
 			<swiper-course name="免费精选" word="FREE"></swiper-course>
 		</view>
@@ -34,6 +36,8 @@
 	import courseCategory from "@/pages/index/components/course-category.vue"
 	// 引入热门推荐模块
 	import swiperCourse from "@/pages/index/components/swiper-course.vue"
+	// 引入近期上新组件
+	import scollCourse from "@/pages/index/components/scroll-course.vue"
 	export default {
 		data() {
 			return {
@@ -45,14 +49,12 @@
 			SearchModel.handleUpdatePlaceholderText(this)
 			// #endif
 		},
-		methods: {
-
-		},
 		components:{
 			iSearchInput,
 			iBanner,
 			courseCategory,
-			swiperCourse
+			swiperCourse,
+			scollCourse
 		}
 	}
 </script>

@@ -3,7 +3,7 @@
 		<view class="title row space-between">
 			<view class="center">
 				<text class="name">{{name}}</text>
-				<text class="word">{{word}}</text>
+				<text class="word" v-if="word">{{word}}</text>
 			</view>
 			<view class="all">
                  <text>全部</text>
