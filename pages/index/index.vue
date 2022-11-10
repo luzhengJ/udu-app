@@ -13,9 +13,12 @@
 		<!-- 使用分类组件 -->
 		<courseCategory></courseCategory>
 		
-		<!-- 使用热门推荐板块组件 -->
+		<!-- 使用热门推荐 近期上新、免费精选 、付费精品板块组件 -->
 		<view class="list-container">
-			<swiper-course></swiper-course>
+			<!-- 热门推荐 -->
+			<swiper-course name="热门推荐" word="HOT"></swiper-course>
+			<!-- 免费精选 -->
+			<swiper-course name="免费精选" word="FREE"></swiper-course>
 		</view>
 	</view>
 </template>

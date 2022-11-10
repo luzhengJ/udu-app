@@ -255,7 +255,10 @@ var render = function() {
       _c(
         "uni-view",
         { staticClass: _vm._$g(3, "sc"), attrs: { _i: 3 } },
-        [_c("swiper-course", { attrs: { _i: 4 } })],
+        [
+          _c("swiper-course", { attrs: { _i: 4 } }),
+          _c("swiper-course", { attrs: { _i: 5 } })
+        ],
         1
       )
     ],
@@ -1614,7 +1617,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 var _listBox = _interopRequireDefault(__webpack_require__(/*! @/pages/index/components/list-box.vue */ 40));
 var _iCourseItem = _interopRequireDefault(__webpack_require__(/*! @/components/common/i-course-item.vue */ 48));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =
 {
-  props: ["column", "rows", "courseData"],
+  props: ["name", "word", "column", "rows", "courseData"],
   data: function data() {
     return {
       wxsProps: {} };
@@ -1719,12 +1722,12 @@ var render = function() {
               _c(
                 "v-uni-text",
                 { staticClass: _vm._$g(3, "sc"), attrs: { _i: 3 } },
-                [_vm._v("热门推荐")]
+                [_vm._v(_vm._$g(3, "t0-0"))]
               ),
               _c(
                 "v-uni-text",
                 { staticClass: _vm._$g(4, "sc"), attrs: { _i: 4 } },
-                [_vm._v("hot")]
+                [_vm._v(_vm._$g(4, "t0-0"))]
               )
             ],
             1
@@ -1782,7 +1785,7 @@ __webpack_require__.r(__webpack_exports__);
 Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default =
 
 {
-
+  props: ["name", "word"],
   data: function data() {
     return {
       wxsProps: {} };
@@ -3197,7 +3200,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 var _listBox = _interopRequireDefault(__webpack_require__(/*! @/pages/index/components/list-box.vue */ 40));
 var _iCourseItem = _interopRequireDefault(__webpack_require__(/*! @/components/common/i-course-item.vue */ 48));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =
 {
-  props: ["column", "rows", "courseData"],
+  props: ["name", "word", "column", "rows", "courseData"],
   data: function data() {
     return {
       wxsProps: {} };

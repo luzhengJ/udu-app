@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<list-box>
+		<list-box :name="name" :word="word">
 			<swiper 
 			class="list-swiper"
 			:style="{height:`${200 * rows}rpx`}"
@@ -21,6 +21,14 @@
 	import courseData from "@/mock/courseData.js"
 	export default {
 		props:{
+			name : {
+				type : String,
+				default : ""
+			},
+			word : {
+				type : String,
+				default : ""
+			},
 			// 当前数据的列数(有几列)
 			column : {
 			    type : Number,
