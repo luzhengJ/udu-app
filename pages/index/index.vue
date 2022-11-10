@@ -11,7 +11,12 @@
 		<i-banner></i-banner>
 		
 		<!-- 使用分类组件 -->
-		<!-- <category-box></category-box> -->
+		<courseCategory></courseCategory>
+		
+		<!-- 使用热门推荐板块组件 -->
+		<view class="list-container">
+			<swiper-course></swiper-course>
+		</view>
 	</view>
 </template>
 
@@ -22,7 +27,10 @@
 	import SearchModel from "@/model/searchModel.js"
 	// 引入轮播图组件
 	import iBanner from "@/components/common/i-banner.vue"
-	// import categoryBox from "@/components/category-box/category-box.vue"
+	// 引入分类组件
+	import courseCategory from "@/pages/index/components/course-category.vue"
+	// 引入热门推荐模块
+	import swiperCourse from "@/pages/index/components/swiper-course.vue"
 	export default {
 		data() {
 			return {
@@ -39,12 +47,15 @@
 		},
 		components:{
 			iSearchInput,
-			iBanner
-			// categoryBox
+			iBanner,
+			courseCategory,
+			swiperCourse
 		}
 	}
 </script>
 
-<style>
-	
+<style lang="scss">
+	.list-container{
+		padding: 0 30rpx;
+	}
 </style>
