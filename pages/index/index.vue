@@ -21,6 +21,8 @@
 			<scoll-course name="近期上新" word="NEW"></scoll-course>
 			<!-- 免费精选 -->
 			<swiper-course name="免费精选" word="FREE"></swiper-course>
+			<!-- 付费精品 -->
+			<list-course name="付费精品" word="NICE"></list-course>
 		</view>
 	</view>
 </template>
@@ -38,6 +40,8 @@
 	import swiperCourse from "@/pages/index/components/swiper-course.vue"
 	// 引入近期上新组件
 	import scollCourse from "@/pages/index/components/scroll-course.vue"
+	// 引入付费精品组件
+	import listCourse from "@/pages/index/components/list-course.vue"
 	export default {
 		data() {
 			return {
@@ -54,7 +58,8 @@
 			iBanner,
 			courseCategory,
 			swiperCourse,
-			scollCourse
+			scollCourse,
+			listCourse
 		}
 	}
 </script>
